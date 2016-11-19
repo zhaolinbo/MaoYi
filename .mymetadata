@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="MaoYi"
+  id="myeclipse.1479462840819"
+  context-root="/MaoYi"
+  j2ee-spec="6.0"
+  archive="MaoYi.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
