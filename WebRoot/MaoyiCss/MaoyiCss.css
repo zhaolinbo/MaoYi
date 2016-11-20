@@ -8,27 +8,28 @@ body {
 	width: 100%;
 	height: 105px;
 }
-
+/*logo图*/
 .logoImage {
 	width: 105px;
 	height: 73px;
 	background: url("../images/logo.png") center;
 	float: left;
 }
-
+/*logo名字*/
 .logoNameImage {
 	width: 319px;
 	height: 45px;
-	margin-top: 20px; background : url("../images/name.png") center;
+	margin-top: 20px; 
 	float: left;
 	background: url("../images/name.png") center;
 }
-
+/*放主图的div*/
 .Rotation {
 	width: 100%;
 	height: 200px;
 	border-color: #111111;
 	border-style: solid;
+	background: url("../images/Toubu.jpg") no-repeat;
 }
 
 .SYbutton {
@@ -37,4 +38,40 @@ body {
 	height: 35px;
 	float: left;
 	list-style: none;
+}
+/*产品类型*/
+.CPFLdiv {
+	width: 240px;
+	height: 300px;
+	border:5px solid #89cff0;
+}
+.CPFLDiv1 {
+	width: 240px;
+	height: 50px;
+	float: left;
+	border-bottom: 2px solid #89cff0;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 50px;
+}
+/*热线电话*/
+.RXDHdiv {
+	margin-top:10px;
+	width: 240px;
+	height: 300px;
+	border:5px solid #89cff0;
+}
+.RXDHDiv1 {
+	width: 240px;
+	height: 50px;
+	float: left;
+	border-bottom: 2px solid #89cff0;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 50px;
+}
+.DBToP {
+	width: 1000px;
+	height: 30px;
+	background-color: red;
 }
