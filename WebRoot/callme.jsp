@@ -8,33 +8,34 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 <base href="<%=basePath%>">
-<title>铸造</title>
+<title>亿合铸</title>
 <link rel="stylesheet" type="text/css" href="./MaoyiCss/MaoyiCss.css" />
 </head>
 
 <body>
 	<!-- 最大的div -->
-	<div style="width: 1000px; height: 1260px; margin: 0 auto;">
+	<div style="width: 970px; height: 1260px; margin: 0 auto;">
 		<!-- 存放logo -->
 		<div class="logo">
 			<div class="logoImage"></div>
 			<div class="logoNameImage"></div>
 		</div>
-		<div
-			style="width: 100%;height: 35px; background-color: gray;border-radius: 5px;border: 1px;">
-			<ul style="list-style-type:none">
+		<div class="Menubj">
+			<ul class="nav" style="list-style-type:none">
 				<li class="SYbutton"><a href="index.jsp">首页</a></li>
 				<li class="SYbutton"><a href="aboutus.jsp">走进我们</a></li>
 				<li class="SYbutton"><a href="factory.jsp">工厂展示</a></li>
 				<li class="SYbutton"><a href="news.jsp">新闻中心</a></li>
 				<li class="SYbutton"><a href="protuct.jsp">产品中心</a></li>
 				<li class="SYbutton"><a href="callme.jsp">联系我们</a></li>
+				<li class="SYbutton"><a href="callme.jsp">在线留言</a></li>
+				<li class="SYbutton"><a href="callme.jsp">English</a></li>
 			</ul>
 		</div>
 
-		<div class="Rotation">123</div>
+		<div class="Rotation"></div>
 		<div style="width: 100%;height: 35px"></div>
-		<div style="width: 1000px;height: 800px; background: lime;">
+		<div style="width: 970px;height: 800px; background: lime;">
 			<div style="float: left;">
 				<div class="CPFLdiv">
 					<div class="CPFLDiv1">产品分类</div>
@@ -53,11 +54,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 			</div>
 			<div
-				style="float: left; width:750px;height: 750px;background-color: red "></div>
+				style="float: left; width:720px;height: 750px;background-color: red "></div>
 		</div>
-		<div style="width: 1000px;height: 30px;background-color: red;margin-top: 10px;border-radius:3px;">1234</div>
+		<div style="width: 960px;height: 30px;background-color: red;margin-top: 10px;border-radius:3px;">1234</div>
 	</div>
-	
-
 </body>
 </html>
