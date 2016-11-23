@@ -10,6 +10,50 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <base href="<%=basePath%>">
 <title>亿合铸</title>
 <link rel="stylesheet" type="text/css" href="./MaoyiCss/MaoyiCss.css" />
+	<script type="text/javascript">
+	function changeImage1(){
+		document.getElementById("product1").className="CPFLDiv22";
+		document.getElementById("product2").className="CPFLDiv2";
+		document.getElementById("product3").className="CPFLDiv2";
+		document.getElementById("product4").className="CPFLDiv2";
+		document.getElementById("product5").className="CPFLDiv2";
+	}
+	function changeImage2(){
+		document.getElementById("product2").className="CPFLDiv22";
+		document.getElementById("product1").className="CPFLDiv2";
+		document.getElementById("product3").className="CPFLDiv2";
+		document.getElementById("product4").className="CPFLDiv2";
+		document.getElementById("product5").className="CPFLDiv2";
+	}
+	function changeImage3(){
+		document.getElementById("product3").className="CPFLDiv22";
+		document.getElementById("product2").className="CPFLDiv2";
+		document.getElementById("product1").className="CPFLDiv2";
+		document.getElementById("product4").className="CPFLDiv2";
+		document.getElementById("product5").className="CPFLDiv2";
+	}
+	function changeImage4(){
+		document.getElementById("product4").className="CPFLDiv22";
+		document.getElementById("product2").className="CPFLDiv2";
+		document.getElementById("product3").className="CPFLDiv2";
+		document.getElementById("product1").className="CPFLDiv2";
+		document.getElementById("product5").className="CPFLDiv2";
+	}
+	function changeImage5(){
+		document.getElementById("product5").className="CPFLDiv22";
+		document.getElementById("product2").className="CPFLDiv2";
+		document.getElementById("product3").className="CPFLDiv2";
+		document.getElementById("product4").className="CPFLDiv2";
+		document.getElementById("product1").className="CPFLDiv2";
+	}
+	function hidden1(){
+		document.getElementById("product5").className="CPFLDiv2";
+		document.getElementById("product2").className="CPFLDiv2";
+		document.getElementById("product3").className="CPFLDiv2";
+		document.getElementById("product4").className="CPFLDiv2";
+		document.getElementById("product1").className="CPFLDiv2";
+	}
+	</script>
 </head>
 
 <body>
@@ -73,27 +117,35 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 		<div class="Rotation"></div>
 		<div style="width: 100%;height: 35px"></div>
-		<div style="width: 970px;height: 800px; background: lime;">
+		<div style="width: 970px;height: 800px;">
 			<div style="float: left;">
 				<div class="CPFLdiv">
 					<div class="CPFLDiv1">产品分类</div>
-					<div class="CPFLDiv1">产品分类</div>
-					<div class="CPFLDiv1">产品分类</div>
-					<div class="CPFLDiv1">产品分类</div>
-					<div class="CPFLDiv1">产品分类</div>
+					<div id="product1" class="CPFLDiv2" onmouseover="changeImage1()" onmouseout="hidden1()">低压铸造</div>
+					<div id="product2" class="CPFLDiv2" onmouseover="changeImage2()" onmouseout="hidden1()">重力铸造</div>
+					<div id="product3" class="CPFLDiv2" onmouseover="changeImage3()" onmouseout="hidden1()">翻砂铸造</div>
+					<div id="product4" class="CPFLDiv2" onmouseover="changeImage4()" onmouseout="hidden1()">树脂砂铸造</div>
+					<div id="product5" class="CPFLDiv2" onmouseover="changeImage5()" onmouseout="hidden1()">铝合金铸造</div>
 				</div>
 
 				<div class="RXDHdiv">
-					<div class="RXDHDiv1">热线电话</div>
-					<div class="RXDHDiv1">热线电话</div>
-					<div class="RXDHDiv1">热线电话</div>
-					<div class="RXDHDiv1">热线电话</div>
-					<div class="RXDHDiv1">热线电话</div>
+					<div class="RXDHDiv1">联系我们</div>
+					
+					<font style="font-size: 14px;font-family: 黑体;color: olive;;">
+						<br>
+						联系人：金总经理 13906461121<br><br>
+						业务联系人：崔经理 13738447771<br><br>
+						电话：86-0536-7958115<br><br>
+						传真：86-0536-7958115<br><br>
+						E-mail：yihezhumaoyi@163.com<br><br>
+						网址：www.yihezhu.com<br><br>
+						地址：山东省潍坊市奎文区胜利东街5111号&nbsp;潍坊金融服务区1号楼1-911<br><br>
+					</font>
 				</div>
 			</div>
 			<div
 				style="float: left; width:720px;height: 750px;background-color: #F5F5F5 ">
-				<p style="font-family: Microsoft YaHei;font-size: 8px;margin-left: 545px;">您现在的位置：首页>联系我们</p>
+				<p style="font-family: Microsoft YaHei;font-size: 8px;margin-left: 545px;">您现在的位置：<a href="index.jsp">首页</a> >联系我们</p>
 				<p style="font-family: Microsoft YaHei;font-size: 18px;margin-left: 15px;">联系我们</p>
 				<hr style="margin-top: 2px;width: 700px;margin-left: 15px;border:1px solid #89cff0;"></hr>
 				<p style="font-family: Microsoft YaHei;font-size:15px;color:#B0C4DE;margin-left: 25px;margin-right: 25px;line-height: 30px;">联系人：</p>
