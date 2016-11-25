@@ -58,7 +58,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <body>
 	<!-- 最大的div -->
-	<div style="width: 970px; height: 1260px; margin: 0 auto;">
+	<div style="width: 970px; height: 1560px; margin: 0 auto;">
 		<!-- 存放logo -->
 		<div class="logo">
 			<div class="logoImage"></div>
@@ -117,7 +117,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 		<div class="Rotation"></div>
 		<div style="width: 100%;height: 35px"></div>
-		<div style="width: 970px;height: 800px;">
+		<div style="width: 970px;height: 680px;">
 			<div style="float: left;">
 				<div class="CPFLdiv">
 					<div class="CPFLDiv1">产品分类</div>
@@ -144,7 +144,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 			</div>
 			<div
-				style="float: left; width:720px;height: 750px;background-color: #F5F5F5 ">
+				style="float: left; width:720px;height: 650px;background-color: #F5F5F5 ">
 					<p style="font-family: Microsoft YaHei;font-size: 8px;margin-left: 545px;">您现在的位置：<a href="index.jsp">首页</a> >新闻中心</p>
 					<p style="font-family: Microsoft YaHei;font-size: 18px;margin-left: 15px;">新闻中心</p>
 				</div>

@@ -58,7 +58,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <body>
 	<!-- 最大的div -->
-	<div style="width: 970px; height: 1260px; margin: 0 auto;">
+	<div style="width: 970px; height: 2060px; margin: 0 auto;">
 		<!-- 存放logo -->
 		<div class="logo">
 			<div class="logoImage"></div>
@@ -154,7 +154,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				
 				</div>
 		</div>
-		<div style="width: 960px;height: 30px;background-color: red;margin-top: 10px;border-radius:3px;">1234</div>
+		<div style="width: 960px;height: 30px;background-color: red;margin-top: 500px;border-radius:3px;">1234</div>
 	</div>
 </body>
 </html>
