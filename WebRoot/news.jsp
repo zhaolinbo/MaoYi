@@ -121,17 +121,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div style="float: left;">
 				<div class="CPFLdiv">
 					<div class="CPFLDiv1">产品分类</div>
-					<div id="product1" class="CPFLDiv2" onmouseover="changeImage1()" onmouseout="hidden1()">低压铸造</div>
-					<div id="product2" class="CPFLDiv2" onmouseover="changeImage2()" onmouseout="hidden1()">重力铸造</div>
-					<div id="product3" class="CPFLDiv2" onmouseover="changeImage3()" onmouseout="hidden1()">翻砂铸造</div>
-					<div id="product4" class="CPFLDiv2" onmouseover="changeImage4()" onmouseout="hidden1()">树脂砂铸造</div>
-					<div id="product5" class="CPFLDiv2" onmouseover="changeImage5()" onmouseout="hidden1()">铝合金铸造</div>
+					<div id="product1" class="CPFLDiv2" onmouseover="changeImage1()" onmouseout="hidden1()"><a href="Productdisplay.jsp">产品展示</a></div>
+					<div id="product2" class="CPFLDiv2" onmouseover="changeImage2()" onmouseout="hidden1()"><a href="Productionprocess.jsp">产品生产工艺</a></div>
+					<div id="product3" class="CPFLDiv2" onmouseover="changeImage3()" onmouseout="hidden1()"><a href="Rawmaterial.jsp">原材料</a></div>
+					<div id="product4" class="CPFLDiv2" onmouseover="changeImage4()" onmouseout="hidden1()"><a href="MoldProductionWorkshop.jsp">模具生产车间</a></div>
+					<div id="product5" class="CPFLDiv2" onmouseover="changeImage5()" onmouseout="hidden1()"><a href="CastingEquipment.jsp">设备床身铸件</a></div>
 				</div>
 
 				<div class="RXDHdiv">
 					<div class="RXDHDiv1">联系我们</div>
 					
-					<font style="font-size: 14px;font-family: 黑体;color: olive;;">
+					<font style="font-size: 14px;font-family: 黑体;color: olive;">
 						<br>
 						联系人：金总经理 13906461121<br><br>
 						业务联系人：崔经理 13738447771<br><br>

@@ -58,7 +58,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <body>
 	<!-- 最大的div -->
-	<div style="width: 970px; height: 1260px; margin: 0 auto;">
+	<div style="width: 970px; height: 1460px; margin: 0 auto;">
 		<!-- 存放logo -->
 		<div class="logo">
 			<div class="logoImage"></div>
@@ -117,15 +117,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 		<div class="Rotation"></div>
 		<div style="width: 100%;height: 35px"></div>
-		<div style="width: 970px;height: 800px;">
+		<div style="width: 970px;height: 580px;">
 			<div style="float: left;">
 				<div class="CPFLdiv">
 					<div class="CPFLDiv1">产品分类</div>
-					<div id="product1" class="CPFLDiv2" onmouseover="changeImage1()" onmouseout="hidden1()">低压铸造</div>
-					<div id="product2" class="CPFLDiv2" onmouseover="changeImage2()" onmouseout="hidden1()">重力铸造</div>
-					<div id="product3" class="CPFLDiv2" onmouseover="changeImage3()" onmouseout="hidden1()">翻砂铸造</div>
-					<div id="product4" class="CPFLDiv2" onmouseover="changeImage4()" onmouseout="hidden1()">树脂砂铸造</div>
-					<div id="product5" class="CPFLDiv2" onmouseover="changeImage5()" onmouseout="hidden1()">铝合金铸造</div>
+					<div id="product1" class="CPFLDiv2" onmouseover="changeImage1()" onmouseout="hidden1()"><a href="Productdisplay.jsp">产品展示</a></div>
+					<div id="product2" class="CPFLDiv2" onmouseover="changeImage2()" onmouseout="hidden1()"><a href="Productionprocess.jsp">产品生产工艺</a></div>
+					<div id="product3" class="CPFLDiv2" onmouseover="changeImage3()" onmouseout="hidden1()"><a href="Rawmaterial.jsp">原材料</a></div>
+					<div id="product4" class="CPFLDiv2" onmouseover="changeImage4()" onmouseout="hidden1()"><a href="MoldProductionWorkshop.jsp">模具生产车间</a></div>
+					<div id="product5" class="CPFLDiv2" onmouseover="changeImage5()" onmouseout="hidden1()"><a href="CastingEquipment.jsp">设备床身铸件</a></div>
 				</div>
 
 				<div class="RXDHdiv">
@@ -144,16 +144,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 			</div>
 			<div
-				style="float: left; width:720px;height: 750px;background-color: #F5F5F5 ">
+				style="float: left; width:720px;height:570px;background-color: #F5F5F5 ">
 				<p style="font-family: Microsoft YaHei;font-size: 8px;margin-left: 545px;">您现在的位置：<a href="index.jsp">首页</a> >联系我们</p>
 				<p style="font-family: Microsoft YaHei;font-size: 18px;margin-left: 15px;">联系我们</p>
 				<hr style="margin-top: 2px;width: 700px;margin-left: 15px;border:1px solid #89cff0;"></hr>
-				<p style="font-family: Microsoft YaHei;font-size:15px;color:#B0C4DE;margin-left: 25px;margin-right: 25px;line-height: 30px;">联系人：</p>
-				<p style="font-family: Microsoft YaHei;font-size: 15px;color:#B0C4DE;margin-left: 25px;margin-right: 25px;line-height: 30px;">业务联系人：</p>
-				<p style="font-family: Microsoft YaHei;font-size: 15px;color:#B0C4DE;margin-left: 25px;margin-right: 25px;line-height: 30px;">电话：</p>
-				<p style="font-family: Microsoft YaHei;font-size: 15px;color:#B0C4DE;margin-left: 25px;margin-right: 25px;line-height: 30px;">传真：</p>
-				<p style="font-family: Microsoft YaHei;font-size: 15px;color:#B0C4DE;margin-left: 25px;margin-right: 25px;line-height: 30px;">邮箱地址：</p>
-				<p style="font-family: Microsoft YaHei;font-size: 15px;color:#B0C4DE;margin-left: 25px;margin-right: 25px;line-height: 30px;">地址：</p>
+				<p style="font-family: Microsoft YaHei;font-size:15px;color:#B0C4DE;margin-left: 25px;margin-right: 25px;line-height: 30px;">联系人：金总经理 13906461121</p>
+				<p style="font-family: Microsoft YaHei;font-size: 15px;color:#B0C4DE;margin-left: 25px;margin-right: 25px;line-height: 30px;">业务联系人：崔经理 13738447771</p>
+				<p style="font-family: Microsoft YaHei;font-size: 15px;color:#B0C4DE;margin-left: 25px;margin-right: 25px;line-height: 30px;">电话：86-0536-7958115</p>
+				<p style="font-family: Microsoft YaHei;font-size: 15px;color:#B0C4DE;margin-left: 25px;margin-right: 25px;line-height: 30px;">传真：86-0536-7958115</p>
+				<p style="font-family: Microsoft YaHei;font-size: 15px;color:#B0C4DE;margin-left: 25px;margin-right: 25px;line-height: 30px;">邮箱地址：yihezhumaoyi@163.com</p>
+				<p style="font-family: Microsoft YaHei;font-size: 15px;color:#B0C4DE;margin-left: 25px;margin-right: 25px;line-height: 30px;">网址：www.yihezhu.com</p>
+				<p style="font-family: Microsoft YaHei;font-size: 15px;color:#B0C4DE;margin-left: 25px;margin-right: 25px;line-height: 30px;">地址：山东省潍坊市奎文区胜利东街5111号&nbsp;潍坊金融服务区1号楼1-911</p>
 				<!-- 下面是地图 -->
 				</div>
 		</div>
