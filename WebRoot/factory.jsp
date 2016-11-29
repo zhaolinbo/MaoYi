@@ -53,12 +53,123 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		document.getElementById("product4").className="CPFLDiv2";
 		document.getElementById("product1").className="CPFLDiv2";
 	}
+	
+	//轮播图显示
+	window.onload = function() {
+		var container = document.getElementById('container');
+		var list = document.getElementById('list');
+		var buttons = document.getElementById('buttons').getElementsByTagName(
+				'span');
+		var prev = document.getElementById('prev');
+		var next = document.getElementById('next');
+		var index = 1;
+		var len = 3;
+		var animated = false;
+		var interval = 3000;
+		var timer;
+
+		function animate(offset) {
+			if (offset == 0) {
+				return;
+			}
+			animated = true;
+			var time = 300;
+			var inteval = 10;
+			var speed = offset / (time / inteval);
+			var left = parseInt(list.style.left) + offset;
+
+			var go = function() {
+				if ((speed > 0 && parseInt(list.style.left) < left)
+						|| (speed < 0 && parseInt(list.style.left) > left)) {
+					list.style.left = parseInt(list.style.left) + speed + 'px';
+					setTimeout(go, inteval);
+				} else {
+					list.style.left = left + 'px';
+					if (left > -200) {
+						list.style.left = -965 * len + 'px';
+					}
+					if (left < (-965 * len)) {
+						list.style.left = '-965px';
+					}
+					animated = false;
+				}
+			}
+			go();
+		}
+
+		function showButton() {
+			for ( var i = 0; i < buttons.length; i++) {
+				if (buttons[i].className == 'on') {
+					buttons[i].className = '';
+					break;
+				}
+			}
+			buttons[index - 1].className = 'on';
+		}
+
+		function play() {
+			timer = setTimeout(function() {
+				next.onclick();
+				play();
+			}, interval);
+		}
+		function stop() {
+			clearTimeout(timer);
+		}
+
+		next.onclick = function() {
+			if (animated) {
+				return;
+			}
+			if (index == 3) {
+				index = 1;
+			} else {
+				index += 1;
+			}
+			animate(-960);
+			showButton();
+		}
+		prev.onclick = function() {
+			if (animated) {
+				return;
+			}
+			if (index == 1) {
+				index = 3;
+			} else {
+				index -= 1;
+			}
+			animate(965);
+			showButton();
+		}
+
+		for ( var i = 0; i < buttons.length; i++) {
+			buttons[i].onclick = function() {
+				if (animated) {
+					return;
+				}
+				if (this.className == 'on') {
+					return;
+				}
+				var myIndex = parseInt(this.getAttribute('index'));
+				var offset = -965 * (myIndex - index);
+
+				animate(offset);
+				index = myIndex;
+				showButton();
+			}
+		}
+
+		container.onmouseover = stop;
+		container.onmouseout = play;
+
+		play();
+	}
 	</script>
 </head>
 
 <body>
 	<!-- 最大的div -->
-	<div style="width: 970px; height: 2060px; margin: 0 auto;">
+	<div style="width: 970px; height: 2030px; margin: 0 auto;">
 		<!-- 存放logo -->
 		<div class="logo">
 			<div class="logoImage"></div>
@@ -110,14 +221,25 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 50px;">
 						<img alt="" src="images/menulibj.jpg">
 				</li>
-				<li class="SYbutton"><a href="callme.jsp">在线留言</a></li>
-				<li class="SYbutton"><a href="callme.jsp">English</a></li>
 			</ul>
 		</div>
 
-		<div class="Rotation"></div>
+		<!-- 轮播图显示 -->
+		<div id="container">
+			<div id="list" style="left: -965px;">
+				<img src="images/ban3.jpg" alt="1" /> <img src="images/ban1.jpg"
+					alt="1" /> <img src="images/ban2.jpg" alt="2" /> <img
+					src="images/ban3.jpg" alt="3" /> <img src="images/ban1.jpg" alt="3" />
+			</div>
+			<div id="buttons">
+				<span index="1" class="on"></span> <span index="2"></span> <span
+					index="3"></span>
+			</div>
+			<a href="javascript:;" id="prev" class="arrow">&lt;</a> <a
+				href="javascript:;" id="next" class="arrow">&gt;</a>
+		</div>
 		<div style="width: 100%;height: 35px"></div>
-		<div style="width: 970px;height: 800px;">
+		<div style="width: 970px;height: 1300px;">
 			<div style="float: left;">
 				<div class="CPFLdiv">
 					<div class="CPFLDiv1">产品分类</div>
@@ -131,7 +253,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="RXDHdiv">
 					<div class="RXDHDiv1">联系我们</div>
 					
-					<font style="font-size: 14px;font-family: 黑体;color: olive;;">
+					<font style="font-size: 14px;font-family: 黑体;color: #5CACEE;">
 						<br>
 						联系人：金总经理 13906461121<br><br>
 						业务联系人：崔经理 13738447771<br><br>
@@ -148,13 +270,72 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<p style="font-family: Microsoft YaHei;font-size: 8px;margin-left: 445px;">您现在的位置：<a href="index.jsp">首页</a> >工厂展示</p>
 				<p style="font-family: Microsoft YaHei;font-size: 18px;margin-left: 15px;">工厂展示</p>
 				<hr style="margin-top: 2px;width: 700px;margin-left: 15px;border:1px solid #89cff0;"></hr>
-				<img src="./images/factoryshow.jpg" width="700px" height="1180px"  style="margin-left: 15px;"      />
-				
-				
+				<img src="./images/factoryshow.jpg" width="700px" height="1180px"  style="margin-left: 15px;"/>
 				
 				</div>
 		</div>
-		<div style="width: 960px;height: 30px;background-color: red;margin-top: 500px;border-radius:3px;">1234</div>
+		<div class="MenubjFoot">
+			<ul class="nav" style="list-style-type:none">
+				<li class="SYbutton">
+					<div style="float: left;">
+						<a href="index.jsp">首页</a>
+					</div>
+					<div
+						style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 60px;">
+						<img alt="" src="images/menulibj.jpg">
+					</div></li>
+				<li class="SYbutton">
+					<div style="float: left;">
+						<a href="aboutus.jsp">走进我们</a>
+					</div>
+					<div
+						style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 50px;">
+						<img alt="" src="images/menulibj.jpg">
+					</div></li>
+				<li class="SYbutton">
+					<div style="float: left;">
+						<a href="factory.jsp">工厂展示</a>
+					</div>
+					<div
+						style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 60px;">
+						<img alt="" src="images/menulibj.jpg">
+				</li>
+				<li class="SYbutton">
+					<div style="float: left;">
+						<a href="news.jsp">新闻中心</a>
+					</div>
+					<div
+						style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 60px;">
+						<img alt="" src="images/menulibj.jpg">
+				</li>
+				<li class="SYbutton">
+					<div style="float: left;">
+						<a href="protuct.jsp">产品中心</a>
+					</div>
+					<div
+						style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 60px;">
+						<img alt="" src="images/menulibj.jpg">
+				</li>
+				<li class="SYbutton">
+					<div style="float: left;">
+						<a href="callme.jsp">联系我们</a>
+					</div>
+					<div
+						style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 50px;">
+						<img alt="" src="images/menulibj.jpg">
+				</li>
+			</ul>
+			</div>
+			<div style="text-align: center; font-family:黑体; color:#5CACEE;font-size: 14px"> 版权所有：潍坊亿合铸贸易有限公司 <br>地址：山东省潍坊市奎文区胜利东街5111号潍坊金融服务区1号楼2-911室 <br>电话：0536-7958115 
+<br><br>专业生产：重力铸造,砂型铸造,低压铸造等产品，欢迎你的来电咨询。
+<br>热门城市推广：浙江、上海、江苏、广东、北京、山东、四川、湖南、湖北、福建 
+<br>备案号：<img src="images/pic.gif">　  技术支持：<a href="http://www.z-promise.com">潍坊智诺睿达网络科技有限公司</a> </div>
+	</div>
+		<!-- 在线QQ -->
+	<div
+		style=" width:130px; height: 100px; border: 1px solid #D4CD49; position:fixed;right:0 ;top:40%">
+		<a href="tencent://message/?uin=1241253577&Site=&Menu=yes">
+			<img src="images/qq.gif"> </a>
 	</div>
 </body>
 </html>
