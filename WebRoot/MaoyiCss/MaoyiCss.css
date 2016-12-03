@@ -138,3 +138,12 @@ a:HOVER {
 	border: 1px;
 	background: url("../images/menubj.jpg") center;
 }
+/*产品中心图片展示*/
+.protImage {
+	width: 165px;
+    height: 165px;
+    margin-left:10px;
+    margin-top:3px;
+    border:1px solid black;
+    float: left;
+}

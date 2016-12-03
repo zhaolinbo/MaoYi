@@ -339,18 +339,18 @@
 					style="margin-top: 5px;width: 700px;margin-left: 15px;border:2px solid #89cff0;"></hr>
 				<div style="width: 720px;height: 350px;">
 					<div
-						style="margin-left: 5px;width: 30px;height: 200px;background-color: #B0C4DE;margin-top: 50px;">
+						style="margin-left: 5px;width: 30px;height: 200px;background-color: #B0C4DE;margin-top: 50px;float: left;">1
 					</div>
 					<div
-						style="width: 150px;height: 150px;background-color: red;margin-left: 80px;margin-top:-230px;float: left;"></div>
+						style="width: 150px;height: 150px;background-color: red;float:left;margin-top:-230px;">2</div>
 					<div
-						style="width: 150px;height: 150px;background-color: red;margin-left: 280px;margin-top:-230px;float: left;"></div>
+						style="width: 150px;height: 150px;background-color: red;float:left;margin-top:-230px;">3</div>
 					<div
-						style="width: 150px;height: 150px;background-color: red;margin-left: 480px;margin-top:-230px;"></div>
+						style="width: 150px;height: 150px;background-color: red;float:left;margin-top:-230px;">4</div>
 					<div
-						style="width: 150px;height: 140px;background-color: red;margin-left: 150px;margin-top: -70px;float: left;"></div>
+						style="width: 150px;height: 140px;background-color: red;float:left;margin-top: -70px;">5</div>
 					<div
-						style="width: 150px;height: 140px;background-color: red;margin-left: 380px;margin-top: 10px;"></div>
+						style="width: 150px;height: 140px;background-color: red;float:left;margin-top: 10px;">6</div>
 				</div>
 			</div>
 		</div>

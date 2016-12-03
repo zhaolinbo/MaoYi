@@ -1,7 +1,9 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -10,50 +12,50 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <base href="<%=basePath%>">
 <title>亿合铸产品展示</title>
 <link rel="stylesheet" type="text/css" href="./MaoyiCss/MaoyiCss.css" />
-	<script type="text/javascript">
-	function changeImage1(){
-		document.getElementById("product1").className="CPFLDiv22";
-		document.getElementById("product2").className="CPFLDiv2";
-		document.getElementById("product3").className="CPFLDiv2";
-		document.getElementById("product4").className="CPFLDiv2";
-		document.getElementById("product5").className="CPFLDiv2";
+<script type="text/javascript">
+	function changeImage1() {
+		document.getElementById("product1").className = "CPFLDiv22";
+		document.getElementById("product2").className = "CPFLDiv2";
+		document.getElementById("product3").className = "CPFLDiv2";
+		document.getElementById("product4").className = "CPFLDiv2";
+		document.getElementById("product5").className = "CPFLDiv2";
 	}
-	function changeImage2(){
-		document.getElementById("product2").className="CPFLDiv22";
-		document.getElementById("product1").className="CPFLDiv2";
-		document.getElementById("product3").className="CPFLDiv2";
-		document.getElementById("product4").className="CPFLDiv2";
-		document.getElementById("product5").className="CPFLDiv2";
+	function changeImage2() {
+		document.getElementById("product2").className = "CPFLDiv22";
+		document.getElementById("product1").className = "CPFLDiv2";
+		document.getElementById("product3").className = "CPFLDiv2";
+		document.getElementById("product4").className = "CPFLDiv2";
+		document.getElementById("product5").className = "CPFLDiv2";
 	}
-	function changeImage3(){
-		document.getElementById("product3").className="CPFLDiv22";
-		document.getElementById("product2").className="CPFLDiv2";
-		document.getElementById("product1").className="CPFLDiv2";
-		document.getElementById("product4").className="CPFLDiv2";
-		document.getElementById("product5").className="CPFLDiv2";
+	function changeImage3() {
+		document.getElementById("product3").className = "CPFLDiv22";
+		document.getElementById("product2").className = "CPFLDiv2";
+		document.getElementById("product1").className = "CPFLDiv2";
+		document.getElementById("product4").className = "CPFLDiv2";
+		document.getElementById("product5").className = "CPFLDiv2";
 	}
-	function changeImage4(){
-		document.getElementById("product4").className="CPFLDiv22";
-		document.getElementById("product2").className="CPFLDiv2";
-		document.getElementById("product3").className="CPFLDiv2";
-		document.getElementById("product1").className="CPFLDiv2";
-		document.getElementById("product5").className="CPFLDiv2";
+	function changeImage4() {
+		document.getElementById("product4").className = "CPFLDiv22";
+		document.getElementById("product2").className = "CPFLDiv2";
+		document.getElementById("product3").className = "CPFLDiv2";
+		document.getElementById("product1").className = "CPFLDiv2";
+		document.getElementById("product5").className = "CPFLDiv2";
 	}
-	function changeImage5(){
-		document.getElementById("product5").className="CPFLDiv22";
-		document.getElementById("product2").className="CPFLDiv2";
-		document.getElementById("product3").className="CPFLDiv2";
-		document.getElementById("product4").className="CPFLDiv2";
-		document.getElementById("product1").className="CPFLDiv2";
+	function changeImage5() {
+		document.getElementById("product5").className = "CPFLDiv22";
+		document.getElementById("product2").className = "CPFLDiv2";
+		document.getElementById("product3").className = "CPFLDiv2";
+		document.getElementById("product4").className = "CPFLDiv2";
+		document.getElementById("product1").className = "CPFLDiv2";
 	}
-	function hidden1(){
-		document.getElementById("product5").className="CPFLDiv2";
-		document.getElementById("product2").className="CPFLDiv2";
-		document.getElementById("product3").className="CPFLDiv2";
-		document.getElementById("product4").className="CPFLDiv2";
-		document.getElementById("product1").className="CPFLDiv2";
+	function hidden1() {
+		document.getElementById("product5").className = "CPFLDiv2";
+		document.getElementById("product2").className = "CPFLDiv2";
+		document.getElementById("product3").className = "CPFLDiv2";
+		document.getElementById("product4").className = "CPFLDiv2";
+		document.getElementById("product1").className = "CPFLDiv2";
 	}
-	
+
 	//轮播图显示
 	window.onload = function() {
 		var container = document.getElementById('container');
@@ -164,12 +166,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 		play();
 	}
-	</script>
+</script>
 </head>
 
 <body>
 	<!-- 最大的div -->
-	<div style="width: 970px; height: 1440px; margin: 0 auto;">
+	<div style="width: 970px; height: 1300px; margin: 0 auto;">
 		<!-- 存放logo -->
 		<div class="logo">
 			<div class="logoImage"></div>
@@ -181,44 +183,50 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div style="float: left;">
 						<a href="index.jsp">首页</a>
 					</div>
-					<div style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 60px;">
+					<div
+						style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 60px;">
 						<img alt="" src="images/menulibj.jpg">
 					</div>
 				</li>
 				<li class="SYbutton">
-				<div style="float: left;">
-					<a href="aboutus.jsp">走进我们</a>
-				</div>
-				<div style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 50px;">
-						<img alt="" src="images/menulibj.jpg">
-				</div>
-				</li>
-				<li class="SYbutton">
 					<div style="float: left;">
-					<a href="factory.jsp">工厂展示</a>
+						<a href="aboutus.jsp">走进我们</a>
 					</div>
-					<div style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 60px;">
+					<div
+						style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 50px;">
 						<img alt="" src="images/menulibj.jpg">
+					</div>
 				</li>
 				<li class="SYbutton">
 					<div style="float: left;">
-				<a href="news.jsp">新闻中心</a>
-				</div>
-				<div style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 60px;">
+						<a href="factory.jsp">工厂展示</a>
+					</div>
+					<div
+						style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 60px;">
 						<img alt="" src="images/menulibj.jpg">
 				</li>
 				<li class="SYbutton">
 					<div style="float: left;">
-					<a href="protuct.jsp">产品中心</a>
+						<a href="news.jsp">新闻中心</a>
 					</div>
-					<div style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 60px;">
+					<div
+						style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 60px;">
 						<img alt="" src="images/menulibj.jpg">
-					</li>
+				</li>
 				<li class="SYbutton">
 					<div style="float: left;">
-					<a href="callme.jsp">联系我们</a>
+						<a href="protuct.jsp">产品中心</a>
 					</div>
-					<div style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 50px;">
+					<div
+						style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 60px;">
+						<img alt="" src="images/menulibj.jpg">
+				</li>
+				<li class="SYbutton">
+					<div style="float: left;">
+						<a href="callme.jsp">联系我们</a>
+					</div>
+					<div
+						style="float: left;width: 23px;height: 24px;background: red;margin-top: 5px;margin-left: 50px;">
 						<img alt="" src="images/menulibj.jpg">
 				</li>
 			</ul>
@@ -229,7 +237,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div id="list" style="left: -965px;">
 				<img src="images/ban3.jpg" alt="1" /> <img src="images/ban1.jpg"
 					alt="1" /> <img src="images/ban2.jpg" alt="2" /> <img
-					src="images/ban3.jpg" alt="3" /> <img src="images/ban1.jpg" alt="3" />
+					src="images/ban3.jpg" alt="3" /> <img src="images/ban1.jpg"
+					alt="3" />
 			</div>
 			<div id="buttons">
 				<span index="1" class="on"></span> <span index="2"></span> <span
@@ -243,35 +252,128 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div style="float: left;">
 				<div class="CPFLdiv">
 					<div class="CPFLDiv1">产品分类</div>
-					<div id="product1" class="CPFLDiv2" onmouseover="changeImage1()" onmouseout="hidden1()"><a href="Productdisplay.jsp">产品展示</a></div>
-					<div id="product2" class="CPFLDiv2" onmouseover="changeImage2()" onmouseout="hidden1()"><a href="Productionprocess.jsp">产品生产工艺</a></div>
-					<div id="product3" class="CPFLDiv2" onmouseover="changeImage3()" onmouseout="hidden1()"><a href="Rawmaterial.jsp">原材料</a></div>
-					<div id="product4" class="CPFLDiv2" onmouseover="changeImage4()" onmouseout="hidden1()"><a href="MoldProductionWorkshop.jsp">模具生产车间</a></div>
-					<div id="product5" class="CPFLDiv2" onmouseover="changeImage5()" onmouseout="hidden1()"><a href="CastingEquipment.jsp">设备床身铸件</a></div>
+					<div id="product1" class="CPFLDiv2" onmouseover="changeImage1()"
+						onmouseout="hidden1()">
+						<a href="Productdisplay.jsp">产品展示</a>
+					</div>
+					<div id="product2" class="CPFLDiv2" onmouseover="changeImage2()"
+						onmouseout="hidden1()">
+						<a href="Productionprocess.jsp">产品生产工艺</a>
+					</div>
+					<div id="product3" class="CPFLDiv2" onmouseover="changeImage3()"
+						onmouseout="hidden1()">
+						<a href="Rawmaterial.jsp">原材料</a>
+					</div>
+					<div id="product4" class="CPFLDiv2" onmouseover="changeImage4()"
+						onmouseout="hidden1()">
+						<a href="MoldProductionWorkshop.jsp">模具生产车间</a>
+					</div>
+					<div id="product5" class="CPFLDiv2" onmouseover="changeImage5()"
+						onmouseout="hidden1()">
+						<a href="CastingEquipment.jsp">设备床身铸件</a>
+					</div>
 				</div>
 
 				<div class="RXDHdiv">
 					<div class="RXDHDiv1">联系我们</div>
-					
+
 					<font style="font-size: 14px;font-family: 黑体;color: #5CACEE;">
-						<br>
-						联系人：金总经理 13906461121<br><br>
-						业务联系人：崔经理 13738447771<br><br>
-						电话：86-0536-7958115<br><br>
-						传真：86-0536-7958115<br><br>
-						E-mail：yihezhumaoyi@163.com<br><br>
-						网址：www.yihezhu.com<br><br>
-						地址：山东省潍坊市奎文区胜利东街5111号&nbsp;潍坊金融服务区1号楼1-911<br><br>
-					</font>
+						<br> 联系人：金总经理 13906461121<br> <br> 业务联系人：崔经理
+						13738447771<br> <br> 电话：86-0536-7958115<br> <br>
+						传真：86-0536-7958115<br> <br> E-mail：yihezhumaoyi@163.com<br>
+						<br> 网址：www.yihezhu.com<br> <br>
+						地址：山东省潍坊市奎文区胜利东街5111号&nbsp;潍坊金融服务区1号楼1-911<br> <br> </font>
 				</div>
 			</div>
 			<div
-				style="float: left; width:720px;height: 600px;background-color: red; ">
-				<p style="font-family: Microsoft YaHei;font-size: 8px;margin-left: 490px;">您现在的位置：<a href="index.jsp">首页</a> ><a href="protuct.jsp">产品中心</a>><a href="Productdisplay.jsp">产品展示</a></p>
-				<p style="font-family: Microsoft YaHei;font-size: 18px;margin-left: 15px;">产品中心</p>
-				<hr style="margin-top: 2px;width: 700px;margin-left: 15px;border:1px solid #89cff0;"></hr>
-				
+				style="float: left; width:720px;height: 650px">
+				<p
+					style="font-family: Microsoft YaHei;font-size: 8px;margin-left: 490px;">
+					您现在的位置：<a href="index.jsp">首页</a> ><a href="protuct.jsp">产品中心</a>><a
+						href="Productdisplay.jsp">产品展示</a>
+				</p>
+				<p
+					style="font-family: Microsoft YaHei;font-size: 18px;margin-left: 15px;">产品中心</p>
+				<hr
+					style="margin-top: 2px;width: 700px;margin-left: 15px;border:1px solid #89cff0;"></hr>
+				<div class="protImage">
+					<div>
+						<img src="images/p1.png">
+					</div>
+					<div style="text-align: center;font-family: 黑体">产品展示</div>
 				</div>
+				<div class="protImage">
+					<div>
+						<img src="images/p2.png">
+					</div>
+					<div style="text-align: center;font-family: 黑体">产品展示</div>
+				</div>
+				<div class="protImage">
+					<div>
+						<img src="images/p3.png">
+					</div>
+					<div style="text-align: center;font-family: 黑体">产品展示</div>
+				</div>
+				<div class="protImage">
+					<div>
+						<img src="images/p4.png">
+					</div>
+					<div style="text-align: center;font-family: 黑体">产品展示</div>
+				</div>
+				<div class="protImage">
+					<div>
+						<img src="images/p5.png">
+					</div>
+					<div style="text-align: center;font-family: 黑体">产品展示</div>
+				</div>
+				<div class="protImage">
+					<div style="text-align: center;">
+						<img src="images/p6.png">
+					</div>
+					<div style="text-align: center;font-family: 黑体">产品展示</div>
+				</div>
+				<div class="protImage">
+					<div style="text-align: center;">
+						<img src="images/p7-7.png">
+					</div>
+					<div style="text-align: center;font-family: 黑体">产品展示</div>
+				</div>
+				<div class="protImage">
+					<div style="text-align: center;">
+						<img src="images/p8.png">
+					</div>
+					<div style="text-align: center;font-family: 黑体">产品展示</div>
+				</div>
+				<div class="protImage">
+					<div style="text-align: center;">
+						<img src="images/p9.png">
+					</div>
+					<div style="text-align: center;font-family: 黑体">产品展示</div>
+				</div>
+				<div class="protImage">
+					<div style="text-align: center;">
+						<img src="images/p10.png">
+					</div>
+					<div style="text-align: center;font-family: 黑体">产品展示</div>
+				</div>
+				<div class="protImage">
+					<div style="text-align: center;margin-top: 35px">
+						<img src="images/p11.png">
+					</div>
+					<div style="text-align: center;font-family: 黑体">产品展示</div>
+				</div>
+				<div class="protImage">
+					<div style="text-align: center;margin-top: 35px">
+						<img src="images/p11.png">
+					</div>
+					<div style="text-align: center;font-family: 黑体">产品展示</div>
+				</div>
+				<div style="float: right; margin-right: 50px;margin-top: 15px">
+					<a style="cursor: pointer;">上一页</a> <a style="cursor: pointer;">1</a>
+					<a style="cursor: pointer;" href="protuct1.jsp">2</a> <a
+						style="cursor: pointer;" href="protuct1.jsp">下一页</a>
+				</div>
+			</div>
 		</div>
 		<div class="MenubjFoot">
 			<ul class="nav" style="list-style-type:none">
@@ -324,17 +426,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<img alt="" src="images/menulibj.jpg">
 				</li>
 			</ul>
-			</div>
-			<div style="text-align: center; font-family:黑体; color:#5CACEE;font-size: 14px"> 版权所有：潍坊亿合铸贸易有限公司 <br>地址：山东省潍坊市奎文区胜利东街5111号潍坊金融服务区1号楼2-911室 <br>电话：0536-7958115 
-<br><br>专业生产：重力铸造,砂型铸造,低压铸造等产品，欢迎你的来电咨询。
-<br>热门城市推广：浙江、上海、江苏、广东、北京、山东、四川、湖南、湖北、福建 
-<br>备案号：<img src="images/pic.gif">　  技术支持：<a href="http://www.z-promise.com">潍坊智诺睿达网络科技有限公司</a> </div>
+		</div>
+		<div
+			style="text-align: center; font-family:黑体; color:#5CACEE;font-size: 14px">
+			版权所有：潍坊亿合铸贸易有限公司 <br>地址：山东省潍坊市奎文区胜利东街5111号潍坊金融服务区1号楼2-911室 <br>电话：0536-7958115
+			<br> <br>专业生产：重力铸造,砂型铸造,低压铸造等产品，欢迎你的来电咨询。 <br>热门城市推广：浙江、上海、江苏、广东、北京、山东、四川、湖南、湖北、福建
+			<br>备案号：<img src="images/pic.gif"> 技术支持：<a
+				href="http://www.z-promise.com">潍坊智诺睿达网络科技有限公司</a>
+		</div>
 	</div>
-		<!-- 在线QQ -->
+	<!-- 在线QQ -->
 	<div
 		style=" width:130px; height: 100px; border: 1px solid #D4CD49; position:fixed;right:0 ;top:40%">
-		<a href="tencent://message/?uin=1241253577&Site=&Menu=yes">
-			<img src="images/qq.gif"> </a>
+		<a href="tencent://message/?uin=1241253577&Site=&Menu=yes"> <img
+			src="images/qq.gif"> </a>
 	</div>
 </body>
 </html>

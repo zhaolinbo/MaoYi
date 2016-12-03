@@ -294,83 +294,23 @@
 					style="font-family: Microsoft YaHei;font-size: 18px;margin-left: 15px;">产品中心</p>
 				<hr
 					style="margin-top: 2px;width: 700px;margin-left: 15px;border:1px solid #89cff0;"></hr>
-				<div class="protImage">
-					<div>
-						<img src="images/p1.png">
-					</div>
-					<div style="text-align: center;font-family: 黑体">产品展示</div>
-				</div>
-				<div class="protImage">
-						<div>
-						<img src="images/p2.png">
-					</div>
-					<div style="text-align: center;font-family: 黑体">产品展示</div>
-				</div>
-				<div class="protImage">
-					<div>
-						<img src="images/p3.png">
-					</div>
-					<div style="text-align: center;font-family: 黑体">产品展示</div>
-				</div>
-				<div class="protImage">
-					<div>
-						<img src="images/p4.png">
-					</div>
-				<div style="text-align: center;font-family: 黑体">产品展示</div>
-				</div>
-				<div class="protImage">
-									<div>
-						<img src="images/p5.png">
-					</div>
-				<div style="text-align: center;font-family: 黑体">产品展示</div>
-				</div>
-				<div class="protImage">
-					<div style="text-align: center;">
-						<img src="images/p6.png">
-					</div>
-					<div style="text-align: center;font-family: 黑体">产品展示</div>
-				</div>
-				<div class="protImage">
-					<div style="text-align: center;">
-						<img src="images/p7-7.png">
-					</div>
-					<div style="text-align: center;font-family: 黑体">产品展示</div>
-				</div>
-				<div class="protImage">
-					<div style="text-align: center;">
-						<img src="images/p8.png">
-					</div>
-					<div style="text-align: center;font-family: 黑体">产品展示</div>
-				</div>
-				<div class="protImage">
-					<div style="text-align: center;">
-						<img src="images/p9.png">
-					</div>
-					<div style="text-align: center;font-family: 黑体">产品展示</div>
-				</div>
-				<div class="protImage">
-					<div style="text-align: center;">
-						<img src="images/p10.png">
-					</div>
-					<div style="text-align: center;font-family: 黑体">产品展示</div>
-				</div>
-				<div class="protImage">
-					<div style="text-align: center;margin-top: 35px">
-						<img src="images/p11.png">
-					</div>
-					<div style="text-align: center;font-family: 黑体">产品展示</div>
-				</div>
-				<div class="protImage">
-					<div style="text-align: center;margin-top: 35px">
-						<img src="images/p11.png">
-					</div>
-					<div style="text-align: center;font-family: 黑体">产品展示</div>
-				</div>
-				<div style="float: right; margin-right: 50px;margin-top: 15px">
-					<a style="cursor: pointer;">上一页</a> 
-					<a style="cursor: pointer;">1</a> 
-					<a style="cursor: pointer;" href="protuct1.jsp">2</a> 
-					<a style="cursor: pointer;" href="protuct1.jsp">下一页</a>
+				<div class="protImage"></div>
+				<div class="protImage"></div>
+				<div class="protImage"></div>
+				<div class="protImage"></div>
+				<div class="protImage"></div>
+				<div class="protImage"></div>
+				<div class="protImage"></div>
+				<div class="protImage"></div>
+				<div class="protImage"></div>
+				<div class="protImage"></div>
+				<div class="protImage"></div>
+				<div class="protImage"></div>
+				<div style="float: right; margin-right: 50px;margin-top: 10px">
+					<a style="cursor: pointer;" href="protuct.jsp">上一页</a> 
+					<a style="cursor: pointer;" href="protuct.jsp">1</a> 
+					<a style="cursor: pointer;">2</a> 
+					<a style="cursor: pointer;">下一页</a>
 				</div>
 			</div>
 		</div>
