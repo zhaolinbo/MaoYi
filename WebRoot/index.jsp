@@ -414,7 +414,7 @@
 	<!-- 在线QQ -->
 	<div
 		style=" width:130px; height: 100px; border: 1px solid #D4CD49; position:fixed;right:0 ;top:40%">
-		<a href="tencent://message/?uin=1241253577&Site=&Menu=yes">
+		<a href="tencent://message/?uin=2221231044&Site=&Menu=yes">
 			<img src="images/qq.gif"> </a>
 	</div>
 </body>
